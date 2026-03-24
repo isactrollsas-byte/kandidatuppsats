@@ -15,8 +15,8 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-OUTPUT_RAW   = "master_dataset.csv"
-OUTPUT_CLEAN = "master_clean.csv"
+OUTPUT_RAW   = "data/master_dataset.csv"
+OUTPUT_CLEAN = "data/master_clean.csv"
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Ladda filer
@@ -72,9 +72,9 @@ def merge_all() -> pd.DataFrame:
 
     # Ladda
     print("Laddar filer:")
-    macro  = load_csv("macro_data_sweden.csv")
-    sector = load_csv("sector_proxy_data.csv")
-    sales  = load_csv("sales_data.csv")
+    macro  = load_csv("data/macro_data_sweden.csv")
+    sector = load_csv("data/sector_proxy_data.csv")
+    sales  = load_csv("data/sales_data.csv")
 
     # Bygg period-index 2010Q1–2025Q4
     all_quarters = pd.period_range(start="2010Q1", end="2025Q4", freq="Q").astype(str)

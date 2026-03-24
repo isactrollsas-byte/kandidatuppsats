@@ -27,8 +27,8 @@ from sklearn.decomposition import PCA
 from sklearn.impute import SimpleImputer
 
 # ── Konfiguration ──────────────────────────────────────────────────────────────
-MACRO_FILE = "master_dataset.csv"   # Slår ihop makro + sektorproxies
-SALES_FILE = "sales_data.csv"       # Nordea-data – lägg till manuellt
+MACRO_FILE = "data/master_dataset.csv"   # Slår ihop makro + sektorproxies
+SALES_FILE = "data/sales_data.csv"       # Nordea-data – lägg till manuellt
 OUTPUT_DIR = Path("figures")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -285,6 +285,6 @@ if __name__ == "__main__":
         columns=[f"PC{i+1}" for i in range(components.shape[1])]
     )
     pc_df.insert(0, "period", df["period"].values)
-    pc_df.to_csv("pca_scores.csv", index=False, sep=";", decimal=",")
-    print("\nPC-scores sparade till: pca_scores.csv")
+    pc_df.to_csv("data/pca_scores.csv", index=False, sep=";", decimal=",")
+    print("\nPC-scores sparade till: data/pca_scores.csv")
     print("\nKlar!")

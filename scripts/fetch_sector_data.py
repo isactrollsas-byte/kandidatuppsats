@@ -31,7 +31,7 @@ from io import StringIO
 
 START_YEAR = 2010
 END_YEAR   = 2025
-OUTPUT_CSV = "sector_proxy_data.csv"
+OUTPUT_CSV = "data/sector_proxy_data.csv"
 SCB_BASE   = "https://api.scb.se/OV0104/v1/doris/sv/ssd"
 ECB_BASE   = "https://data-api.ecb.europa.eu/service/data"
 

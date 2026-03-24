@@ -16,7 +16,7 @@ import time
 
 START_YEAR = 2010
 END_YEAR   = 2025
-OUTPUT_CSV = "macro_data_sweden.csv"
+OUTPUT_CSV = "data/macro_data_sweden.csv"
 SCB_BASE   = "https://api.scb.se/OV0104/v1/doris/sv/ssd"
 RIKS_BASE  = "https://api.riksbank.se/swea/v1"
 
