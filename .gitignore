@@ -1,0 +1,29 @@
+# Claude Code – lokala inställningar, hör inte hemma i repot
+.claude/
+
+# macOS
+.DS_Store
+
+# Känslig data – läggs aldrig upp
+sales_data.csv
+nordea_data.csv
+*.secret.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Temporära filer
+*.tmp
+*.log
